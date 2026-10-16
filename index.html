@@ -4,10 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>مريم إبراهيم إسماعيل البهنساوي | الملف الشخصي</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&family=Noto+Kufi+Arabic:wght@500;600;700&display=swap" rel="stylesheet">
     <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/portfolio.css" rel="stylesheet">
 </head>
-<body class="bg-light">
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+<body class="bg-light portfolio-page">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top portfolio-nav">
     <div class="container">
         <a class="navbar-brand fw-bold" href="#home"><span class="text-info">مريم</span> | ملفي الشخصي</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="فتح القائمة">
@@ -27,20 +31,22 @@
 </nav>
 
 <main>
-    <section id="home" class="bg-dark text-white py-5">
+        <section id="home" class="bg-dark text-white py-5 hero-section">
         <div class="container py-5">
             <div class="row align-items-center">
-                <div class="col-md-8 text-center text-md-start">
-                    <span class="badge bg-info text-dark mb-3 p-2">أهلاً بكِ في ملفي الشخصي</span>
-                    <h1 class="display-4 fw-bold">مريم إبراهيم إسماعيل البهنساوي</h1>
-                    <h2 class="h3 text-info mb-3">طالبة نظم معلومات وبرمجة</h2>
-                    <p class="lead text-white-50">معهد الدلتا للحاسبات والمعلومات — المنصورة</p>
-                    <a href="#projects" class="btn btn-info btn-lg me-2 mb-2">مشروعاتي</a>
-                    <a href="#contact" class="btn btn-outline-light btn-lg mb-2">تواصلي معي</a>
+                <div class="col-md-8 text-center text-md-start hero-copy">
+                    <span class="badge bg-info text-dark mb-3 p-2 hero-kicker">أهلاً بكِ في ملفي الشخصي</span>
+                    <h1 class="display-4 fw-bold hero-title">مريم إبراهيم إسماعيل البهنساوي</h1>
+                    <h2 class="h3 text-info mb-3 hero-role">طالبة نظم معلومات وبرمجة</h2>
+                    <p class="lead text-white-50 hero-school">معهد الدلتا للحاسبات والمعلومات — المنصورة</p>
+                    <div class="hero-actions">
+                        <a href="#projects" class="btn btn-info btn-lg me-2 mb-2">مشروعاتي</a>
+                        <a href="#contact" class="btn btn-outline-light btn-lg mb-2">تواصلي معي</a>
+                    </div>
                 </div>
-                <div class="col-md-4 text-center mt-4 mt-md-0">
-                    <img src="assets/img/person.jpg" alt="صورة مريم الشخصية" width="230" height="230" class="rounded-circle border border-4 border-info shadow">
-                    <div class="mt-3"><span class="badge bg-secondary p-2">طالبة نظم معلومات وبرمجة</span></div>
+                <div class="col-md-4 text-center mt-4 mt-md-0 hero-portrait">
+                    <img src="assets/img/person.jpg" alt="صورة مريم الشخصية" width="230" height="230" class="rounded-circle border border-4 border-info shadow hero-image">
+                    <div class="mt-3"><span class="badge bg-secondary p-2 hero-label">طالبة نظم معلومات وبرمجة</span></div>
                 </div>
             </div>
         </div>
@@ -48,13 +54,13 @@
 
     <section id="about" class="py-5">
         <div class="container py-3">
-            <div class="text-center mb-5">
+            <div class="text-center mb-5 section-intro">
                 <h2 class="fw-bold text-dark">نبذة <span class="text-primary">عني</span></h2>
                 <p class="text-secondary">تعرّفوا عليّ</p>
             </div>
             <div class="row g-4 align-items-stretch">
                 <div class="col-md-6">
-                    <div class="card border-0 shadow-sm h-100">
+                    <div class="card border-0 shadow-sm h-100 profile-card">
                         <div class="card-body p-4">
                             <h3 class="h4 fw-bold">من أنا؟</h3>
                             <p class="text-secondary">أنا مريم إبراهيم إسماعيل البهنساوي، طالبة بالفرقة الرابعة بمعهد الدلتا للحاسبات والمعلومات بالمنصورة، قسم نظم معلومات وبرمجة.</p>
@@ -63,7 +69,7 @@
                     </div>
                 </div>
                 <div class="col-md-6">
-                    <div class="card border-0 shadow-sm h-100">
+                    <div class="card border-0 shadow-sm h-100 education-card">
                         <div class="card-header bg-primary text-white p-3"><h3 class="h5 mb-0">التعليم</h3></div>
                         <div class="card-body">
                             <p><strong>المعهد:</strong> معهد الدلتا للحاسبات والمعلومات — المنصورة</p>
@@ -76,41 +82,41 @@
         </div>
     </section>
 
-    <section id="skills" class="bg-white py-5">
+    <section id="skills" class="bg-white py-5 skills-section">
         <div class="container py-3">
-            <div class="text-center mb-5">
+            <div class="text-center mb-5 section-intro">
                 <h2 class="fw-bold">مهاراتي <span class="text-primary">التقنية</span></h2>
             </div>
             <div class="row g-4 text-center">
-                <div class="col-6 col-md-3"><div class="card border-0 shadow-sm h-100"><div class="card-body p-4"><h3 class="h5 fw-bold">HTML</h3></div></div></div>
-                <div class="col-6 col-md-3"><div class="card border-0 shadow-sm h-100"><div class="card-body p-4"><h3 class="h5 fw-bold">CSS</h3></div></div></div>
-                <div class="col-6 col-md-3"><div class="card border-0 shadow-sm h-100"><div class="card-body p-4"><h3 class="h5 fw-bold">Python</h3></div></div></div>
-                <div class="col-6 col-md-3"><div class="card border-0 shadow-sm h-100"><div class="card-body p-4"><h3 class="h5 fw-bold">Microsoft Word</h3></div></div></div>
+                <div class="col-6 col-md-3"><div class="card border-0 shadow-sm h-100 skill-card"><div class="card-body p-4"><h3 class="h5 fw-bold">HTML</h3></div></div></div>
+                <div class="col-6 col-md-3"><div class="card border-0 shadow-sm h-100 skill-card"><div class="card-body p-4"><h3 class="h5 fw-bold">CSS</h3></div></div></div>
+                <div class="col-6 col-md-3"><div class="card border-0 shadow-sm h-100 skill-card"><div class="card-body p-4"><h3 class="h5 fw-bold">Python</h3></div></div></div>
+                <div class="col-6 col-md-3"><div class="card border-0 shadow-sm h-100 skill-card"><div class="card-body p-4"><h3 class="h5 fw-bold">Microsoft Word</h3></div></div></div>
             </div>
         </div>
     </section>
 
-    <section id="hobbies" class="py-5">
+    <section id="hobbies" class="py-5 hobbies-section">
         <div class="container py-3">
-            <div class="text-center mb-4"><h2 class="fw-bold">هواياتي</h2></div>
+            <div class="text-center mb-4 section-intro"><h2 class="fw-bold">هواياتي</h2></div>
             <div class="row g-3 text-center">
-                <div class="col-6 col-md-3"><div class="p-3 border rounded bg-white h-100">السباحة</div></div>
-                <div class="col-6 col-md-3"><div class="p-3 border rounded bg-white h-100">قراءة الروايات</div></div>
-                <div class="col-6 col-md-3"><div class="p-3 border rounded bg-white h-100">السفر</div></div>
-                <div class="col-6 col-md-3"><div class="p-3 border rounded bg-white h-100">الألعاب الرياضية</div></div>
+                <div class="col-6 col-md-3"><div class="p-3 border rounded bg-white h-100 hobby-tile">السباحة</div></div>
+                <div class="col-6 col-md-3"><div class="p-3 border rounded bg-white h-100 hobby-tile">قراءة الروايات</div></div>
+                <div class="col-6 col-md-3"><div class="p-3 border rounded bg-white h-100 hobby-tile">السفر</div></div>
+                <div class="col-6 col-md-3"><div class="p-3 border rounded bg-white h-100 hobby-tile">الألعاب الرياضية</div></div>
             </div>
         </div>
     </section>
 
-    <section id="projects" class="bg-white py-5">
+    <section id="projects" class="bg-white py-5 project-section">
         <div class="container py-3">
-            <div class="text-center mb-4">
+            <div class="text-center mb-4 section-intro">
                 <h2 class="fw-bold">مشروعاتي</h2>
                 <p class="text-secondary">هذا أول مشروع لي، والقادم أفضل بإذن الله</p>
             </div>
             <div class="row justify-content-center">
                 <div class="col-md-9 col-lg-8">
-                    <div class="card border-0 shadow-sm"><div class="card-body p-4 p-md-5 text-center">
+                    <div class="card border-0 shadow-sm project-card"><div class="card-body p-4 p-md-5 text-center">
                         <h3 class="h4 fw-bold">بداية رحلتي في البرمجة</h3>
                         <p class="text-secondary mb-0">بدأت رحلتي في عالم البرمجة من هنا، وهذه مجرد البداية. أتعلم كل يوم شيئاً جديداً، وأسعى إلى تطوير مشروعاتي المستقبلية بشكل أفضل.</p>
                     </div></div>
@@ -119,17 +125,17 @@
         </div>
     </section>
 
-    <section id="contact" class="bg-dark text-white py-5">
+    <section id="contact" class="bg-dark text-white py-5 contact-section">
         <div class="container py-3">
-            <div class="text-center mb-4">
+            <div class="text-center mb-4 section-intro">
                 <h2 class="fw-bold">تواصل <span class="text-info">معي</span></h2>
                 <p class="text-white-50">يسعدني تواصلكم</p>
             </div>
             <div class="row justify-content-center">
                 <div class="col-md-8 col-lg-6">
-                    <div class="card border-0 shadow"><div class="card-body p-4">
-                        <p class="text-dark"><strong>رقم الهاتف:</strong> <a href="tel:01000000000" dir="ltr">01000000000</a></p>
-                        <p class="text-dark mb-0"><strong>البريد الإلكتروني:</strong> <a href="mailto:mariamebrahim@example.com">mariamebrahim@example.com</a></p>
+                    <div class="card border-0 shadow contact-card"><div class="card-body p-4">
+                        <p class="text-dark contact-line"><strong>رقم الهاتف:</strong> <a href="tel:01000000000" dir="ltr">01000000000</a></p>
+                        <p class="text-dark mb-0 contact-line"><strong>البريد الإلكتروني:</strong> <a href="mailto:mariamebrahim@example.com">mariamebrahim@example.com</a></p>
                     </div></div>
                 </div>
             </div>
@@ -137,7 +143,7 @@
     </section>
 </main>
 
-<footer class="bg-black text-white text-center py-4">
+<footer class="bg-black text-white text-center py-4 site-footer">
     <div class="container">
         <h2 class="h5 fw-bold">مريم إبراهيم إسماعيل البهنساوي</h2>
         <p class="text-white-50 mb-2">"كل يوم خطوة جديدة نحو حلم أكبر"</p>
